@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Assignment 6</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="card">
+    <h1 id="title">Welcome to My Portfolio</h1>
+    <h3 id="subtitle">Software Engineering Student</h3>
+    <p id="bio">Hi, I'm Kaisar. I build web apps and study algorithms.</p>
+    <div class="actions">
+      <button id="theme-light">Light</button>
+      <button id="theme-dark" class="btn-dark">Dark</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>About Me</h2>
+    <div id="about-section">
+      <p><b>Status:</b> <span id="status">Learning jQuery mechanics</span></p>
+      <ul id="details">
+        <li>Studying SE at AITU</li>
+        <li>Focusing on algorithms and design patterns</li>
+        <li>Building full-stack projects</li>
+      </ul>
+    </div>
+    <div class="actions">
+      <button id="btn-hide">Hide</button>
+      <button id="btn-show">Show</button>
+      <button id="btn-toggle">Toggle</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Gallery</h2>
+    <div class="pics">
+      <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="Code" class="pic">
+      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="Setup" class="pic">
+    </div>
+    <div class="actions">
+      <button id="fade-out">Fade Out</button>
+      <button id="fade-in">Fade In</button>
+      <button id="fade-toggle">Fade Toggle</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Favorites</h2>
+
+    <div class="panel-item">
+      <div class="panel-header">Favorite Music</div>
+      <div class="panel-body">Wicked Game - Chris Isaac</div>
+    </div>
+
+    <div class="panel-item">
+      <div class="panel-header">Favorite Movies</div>
+      <div class="panel-body">Interstellar, Inception, The Matrix</div>
+    </div>
+
+    <div class="panel-item">
+      <div class="panel-header">Favorite Subjects</div>
+      <div class="panel-body">Design & Analysis of Algorithms, Software Engineering</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Skills & Progress</h2>
+    
+    <div class="input-group">
+      <input type="text" id="skill-input" placeholder="Enter skill...">
+      <button id="btn-append">Add</button>
+      <button id="btn-prepend">Prepend</button>
+      <button id="btn-remove">Remove Last</button>
+    </div>
+
+    <ul id="skill-list">
+      <li>Java / OOP</li>
+      <li>C++ & Algorithms</li>
+      <li>HTML5 & CSS</li>
+      <li>Git & Linux</li>
+    </ul>
+
+    <hr>
+
+    <h3>Skill Levels</h3>
+    <button id="btn-animate">Animate Skills</button>
+
+    <div class="skill-group">
+      <span>Java (85%)</span>
+      <div class="progress-bg"><div class="progress-bar" data-val="85%"></div></div>
+    </div>
+
+    <div class="skill-group">
+      <span>Algorithms (80%)</span>
+      <div class="progress-bg"><div class="progress-bar" data-val="80%"></div></div>
+    </div>
+
+    <div class="skill-group">
+      <span>Web / jQuery (70%)</span>
+      <div class="progress-bg"><div class="progress-bar" data-val="70%"></div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Links</h2>
+    <p>Check my link: <a id="main-link" href="https://google.com" target="_blank">Google</a></p>
+    <button id="btn-change-link">Change to GitHub</button>
+  </div>
+
+  <div class="card">
+    <h2>Live Form</h2>
+    <form id="user-form" onsubmit="return false;">
+      <input type="text" id="input-name" placeholder="Name">
+      <input type="email" id="input-email" placeholder="Email">
+    </form>
+
+    <div class="preview">
+      <p>Name: <span id="out-name">...</span></p>
+      <p>Email: <span id="out-email">...</span></p>
+    </div>
+  </div>
+
+</body>
+</html>
